@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Inalámbrico</title>
+</head>
+<body>
+    <h3>Controlar Cargas (LED,etc)</h3>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="command">Command</label>
+        <input type="text" name="command" id="command" placeholder="Comando" required>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
